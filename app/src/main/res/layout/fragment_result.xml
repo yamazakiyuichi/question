@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 0 問正解"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正答率: 0%"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_result"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="苦手問題を復習"
+        android:padding="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_return_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ホームに戻る"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:padding="12dp"/>
+
+</LinearLayout>

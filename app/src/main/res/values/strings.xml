@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">医療情報技師 過去問</string>
+    <string name="menu_home">ホーム</string>
+    <string name="menu_review">復習</string>
+</resources>

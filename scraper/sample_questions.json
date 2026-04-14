@@ -1,0 +1,67 @@
+[
+  {
+    "year": "2023",
+    "category": "医療情報基礎知識",
+    "question_number": 1,
+    "question_text": "電子カルテシステムにおける「問題指向型医療記録（POMR）」の構成要素として正しいのはどれか。",
+    "choice1": "基礎データ・問題リスト・初期計画・経過記録",
+    "choice2": "主訴・現病歴・既往歴・家族歴",
+    "choice3": "入院時要約・退院時要約・手術記録・看護記録",
+    "choice4": "診察・検査・診断・治療",
+    "choice5": "",
+    "correct_answer": 1,
+    "explanation": "POMRはWeed博士が提唱した医療記録の方法論で、基礎データ（Base Data）・問題リスト（Problem List）・初期計画（Initial Plan）・経過記録（Progress Notes）の4要素から構成されます。"
+  },
+  {
+    "year": "2023",
+    "category": "医療情報基礎知識",
+    "question_number": 2,
+    "question_text": "HL7 FHIRに関する説明として正しいのはどれか。",
+    "choice1": "1987年にHL7組織が策定した最初の医療情報交換標準",
+    "choice2": "RESTful APIを活用した医療情報交換の標準規格",
+    "choice3": "画像データ専用の医療情報交換規格",
+    "choice4": "日本独自の医療情報標準規格",
+    "choice5": "",
+    "correct_answer": 2,
+    "explanation": "HL7 FHIRはFast Healthcare Interoperability Resourcesの略で、RESTful WebサービスとJSONまたはXMLを用いた医療情報交換の標準規格です。モバイルアプリやクラウドサービスとの親和性が高いのが特徴です。"
+  },
+  {
+    "year": "2023",
+    "category": "情報処理技術",
+    "question_number": 3,
+    "question_text": "RSA暗号に関する説明として正しいのはどれか。",
+    "choice1": "共通鍵暗号方式の一種である",
+    "choice2": "ハッシュ関数を利用した暗号化方式である",
+    "choice3": "公開鍵と秘密鍵のペアを使用する非対称暗号方式である",
+    "choice4": "量子コンピュータに対して完全に安全である",
+    "choice5": "",
+    "correct_answer": 3,
+    "explanation": "RSA暗号は公開鍵暗号方式（非対称暗号方式）の代表的なアルゴリズムです。公開鍵で暗号化し、秘密鍵で復号します。大きな数の素因数分解の困難性に基づいています。"
+  },
+  {
+    "year": "2022",
+    "category": "医療情報基礎知識",
+    "question_number": 1,
+    "question_text": "DPC（診断群分類）制度に関する説明として誤っているのはどれか。",
+    "choice1": "急性期入院医療を対象とした包括支払い制度である",
+    "choice2": "ICD-10に基づく診断名を用いる",
+    "choice3": "すべての病院に適用が義務付けられている",
+    "choice4": "入院日数によって点数が変わる逓減方式を採用している",
+    "choice5": "",
+    "correct_answer": 3,
+    "explanation": "DPC制度（DPC/PDPS）は急性期入院医療を対象とした包括評価制度ですが、全ての病院に義務付けられているわけではなく、一定の基準を満たした病院が届け出により参加する制度です。"
+  },
+  {
+    "year": "2022",
+    "category": "情報処理技術",
+    "question_number": 2,
+    "question_text": "SQLにおいてデータを検索する際に使用するコマンドはどれか。",
+    "choice1": "INSERT",
+    "choice2": "UPDATE",
+    "choice3": "SELECT",
+    "choice4": "DELETE",
+    "choice5": "",
+    "correct_answer": 3,
+    "explanation": "SQLのデータ操作言語(DML)のうち、データを検索・取得するためのコマンドはSELECTです。INSERTはデータ挿入、UPDATEはデータ更新、DELETEはデータ削除に使用します。"
+  }
+]

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gap="12dp">
+
+        <!-- 統計カード -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学習進捗"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="総問題数: 0問"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"/>
+
+                <TextView
+                    android:id="@+id/text_studied_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学習済み: 0問"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"/>
+
+                <TextView
+                    android:id="@+id/text_correct_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正解済み: 0問"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- フィルターカード -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="絞り込み"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年度"/>
+
+                <Spinner
+                    android:id="@+id/spinner_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="カテゴリ"/>
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ボタン -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="クイズを開始"
+            android:padding="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_wrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="苦手問題を復習"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:padding="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="問題をインポート (JSON)"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:padding="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reset_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="進捗をリセット"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

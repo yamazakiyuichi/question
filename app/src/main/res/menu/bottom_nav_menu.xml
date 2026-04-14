@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="@string/menu_home"/>
+    <item
+        android:id="@+id/reviewFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/menu_review"/>
+</menu>
