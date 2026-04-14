@@ -57,6 +57,9 @@ interface QuestionDao {
     """)
     fun getFilteredQuestions(year: String, category: String): Flow<List<Question>>
 
+    @Query("SELECT COUNT(*) FROM questions")
+    suspend fun getTotalCountOnce(): Int
+
     @Query("DELETE FROM questions")
     suspend fun deleteAll()
 }

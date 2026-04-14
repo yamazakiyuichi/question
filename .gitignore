@@ -11,3 +11,5 @@ local.properties
 *.jks
 __pycache__/
 *.pyc
+app/build/
+
