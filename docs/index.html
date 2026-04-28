@@ -314,7 +314,7 @@ function showScreen(name) {
 function updateHomeStats() {
   const total = questions.length;
   const studied = Object.keys(progress).length;
-  const correct = Object.values(progress).filter(p => p.lastCorrect).length;
+  const correct = Object.values(progress).filter(p => p && p.lastCorrect).length;
   document.getElementById('statTotal').textContent = total;
   document.getElementById('statStudied').textContent = studied;
   document.getElementById('statCorrect').textContent = correct;
@@ -322,8 +322,8 @@ function updateHomeStats() {
 }
 
 function renderFilters() {
-  const years = [...new Set(questions.map(q => q.year))].sort((a,b) => b-a);
-  const cats = [...new Set(questions.map(q => q.category))].sort();
+  const years = [...new Set(questions.map(q => q.year).filter(Boolean))].sort((a,b) => b-a);
+  const cats = [...new Set(questions.map(q => q.category).filter(Boolean))].sort();
 
   const yf = document.getElementById('yearFilter');
   yf.innerHTML = '<button class="filter-chip '+(selectedYear===''?'active':'')+'" onclick="setYear(\'\')">全年度</button>';
@@ -377,6 +377,7 @@ function startQuiz(mode) {
 
 function renderQuestion() {
   const q = currentQuiz[currentIdx];
+  if (!q) { showResult(); return; }
   const total = currentQuiz.length;
 
   document.getElementById('progressText').textContent = `${currentIdx+1} / ${total}`;
@@ -460,7 +461,7 @@ function showResult() {
     [50, 'もう少し。苦手問題を復習しましょう。'],
     [0,  '基礎から復習しましょう。']
   ];
-  document.getElementById('resultMsg').textContent = msgs.find(([t]) => pct >= t)[1];
+  document.getElementById('resultMsg').textContent = (msgs.find(([t]) => pct >= t) || msgs[msgs.length-1])[1];
 }
 
 // ========== REVIEW ==========
