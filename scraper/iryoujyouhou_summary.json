@@ -11,5 +11,7 @@
   "question_page_failures": 0,
   "failure_count": 0,
   "output_dir": "data\\iryoujyouhou",
-  "app_question_count": 2338
+  "app_question_count": 2338,
+  "ai_explanation_count": 2338,
+  "adaptive_mode": "wrong/low-accuracy/unlearned/multi-answer priority, 20 questions per session"
 }
