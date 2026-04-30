@@ -12,28 +12,12 @@
   "failure_count": 0,
   "output_dir": "data\\iryoujyouhou",
   "app_question_count": 2338,
-  "ai_explanation_count": 2338,
+  "ai_explanation_count": 0,
   "adaptive_mode": "wrong/low-accuracy/unlearned/multi-answer priority, 20 questions per session",
-  "2025_ai_analysis_answer_count": 158,
   "ai_analysis_display_order": "explanation first, then AI解析回答",
-  "2025_ai_analysis_rewritten_count": 158,
-  "2025_generic_ai_analysis_rewritten_count": 132,
-  "ai_analysis_rewrite_note": "全問の設問・選択肢・正答・元解説を照合し、AI解析回答を元解説のコピーではない別文に再生成。",
-  "generic_ai_analysis_rewritten_count": 2310,
-  "current_generic_ai_analysis_rewritten_count": 2178,
-  "ai_analysis_preface_removed_count": 2338,
-  "ai_analysis_problem_sentence_removed_count": 213,
+  "ai_analysis_rewrite_note": "AI解析回答を全問から削除し、画面表示も無効化。",
   "question_image_count": 16,
   "question_image_note": "WIKI各問題ページから問題文側の画像付き問題を抽出し、原寸画像をdocs/assets/iryoujyouhouへ保存してimage_urlsを追加。解答解説欄だけの画像は出題前に表示しない。",
   "question_image_question_count": 16,
-  "ai_analysis_similarity_after": {
-    "same": 0,
-    "high_similarity_0_8": 0,
-    "average_similarity": 0.3486
-  },
-  "ai_analysis_similarity_initial_before": {
-    "same": 27,
-    "high_similarity_0_8": 1496,
-    "average_similarity": 0.8033
-  }
+  "ai_analysis_deleted_count": 2338
 }
