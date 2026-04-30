@@ -13,5 +13,7 @@
   "output_dir": "data\\iryoujyouhou",
   "app_question_count": 2338,
   "ai_explanation_count": 2338,
-  "adaptive_mode": "wrong/low-accuracy/unlearned/multi-answer priority, 20 questions per session"
+  "adaptive_mode": "wrong/low-accuracy/unlearned/multi-answer priority, 20 questions per session",
+  "2025_ai_analysis_answer_count": 158,
+  "ai_analysis_display_order": "explanation first, then AI解析回答"
 }
