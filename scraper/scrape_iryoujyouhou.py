@@ -262,6 +262,29 @@ def parse_question_list(html: str, url: str) -> tuple[list[dict[str, str]], str]
     return questions, updated
 
 
+def iter_question_body_images(main: Any) -> Any:
+    body = main.select_one(".user_body") or main
+    for child in body.children:
+        if not getattr(child, "name", None):
+            continue
+        if "region" in (child.get("class") or []):
+            break
+        if child.get_text(" ", strip=True) == "解答解説":
+            break
+        if child.name == "img":
+            yield child
+            continue
+        yield from child.find_all("img")
+
+
+def image_source_url(img: Any, page_url: str) -> str:
+    src = img.get("src") or ""
+    parent = img.find_parent("a", href=True)
+    href = parent.get("href", "") if parent else ""
+    selected = href if "/image/" in href else src
+    return urljoin(page_url, selected) if selected else ""
+
+
 def split_question_page(html: str, url: str) -> dict[str, Any]:
     soup, main = soup_main(html)
     lines, updated = clean_lines(main)
@@ -278,12 +301,12 @@ def split_question_page(html: str, url: str) -> dict[str, Any]:
     fields = parse_question_fields(lines)
 
     image_urls = []
-    for img in main.find_all("img"):
-        src = img.get("src")
+    for img in iter_question_body_images(main):
+        src = image_source_url(img, url)
         if src:
             image_urls.append(
                 {
-                    "src": urljoin(url, src),
+                    "src": src,
                     "alt": img.get("alt", ""),
                 }
             )
