@@ -18,7 +18,9 @@
   "ai_analysis_display_order": "explanation first, then AI解析回答",
   "2025_ai_analysis_rewritten_count": 158,
   "2025_generic_ai_analysis_rewritten_count": 132,
-  "ai_analysis_rewrite_note": "テンプレート型AI解析回答を、各問題の詳細解説と正答選択肢に基づく具体的なAI解析回答へ差し替え。括弧列挙型の汎用文も削除。",
+  "ai_analysis_rewrite_note": "AI解析回答から「この設問は...」「この問題は...」「正解は...」などの前置きを削除し、解説本文から表示する形式へ更新。",
   "generic_ai_analysis_rewritten_count": 2310,
-  "current_generic_ai_analysis_rewritten_count": 2178
+  "current_generic_ai_analysis_rewritten_count": 2178,
+  "ai_analysis_preface_removed_count": 2338,
+  "ai_analysis_problem_sentence_removed_count": 213
 }
