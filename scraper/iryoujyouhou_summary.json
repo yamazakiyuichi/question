@@ -15,5 +15,10 @@
   "ai_explanation_count": 2338,
   "adaptive_mode": "wrong/low-accuracy/unlearned/multi-answer priority, 20 questions per session",
   "2025_ai_analysis_answer_count": 158,
-  "ai_analysis_display_order": "explanation first, then AI解析回答"
+  "ai_analysis_display_order": "explanation first, then AI解析回答",
+  "2025_ai_analysis_rewritten_count": 158,
+  "2025_generic_ai_analysis_rewritten_count": 132,
+  "ai_analysis_rewrite_note": "テンプレート型AI解析回答を、各問題の詳細解説と正答選択肢に基づく具体的なAI解析回答へ差し替え。括弧列挙型の汎用文も削除。",
+  "generic_ai_analysis_rewritten_count": 2310,
+  "current_generic_ai_analysis_rewritten_count": 2178
 }
