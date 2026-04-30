@@ -22,5 +22,7 @@
   "generic_ai_analysis_rewritten_count": 2310,
   "current_generic_ai_analysis_rewritten_count": 2178,
   "ai_analysis_preface_removed_count": 2338,
-  "ai_analysis_problem_sentence_removed_count": 213
+  "ai_analysis_problem_sentence_removed_count": 213,
+  "question_image_count": 1,
+  "question_image_note": "2025年 情報処理技術系 第15問のWIKI画像を取得し、問題画面で表示する image_urls を追加。"
 }
